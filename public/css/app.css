@@ -11718,56 +11718,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-3 {
   margin-top: 0.75rem;
 }
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.mr-4 {
-  margin-right: 1rem;
-}
-.mr-7 {
-  margin-right: 1.75rem;
-}
-.mr-6 {
-  margin-right: 1.5rem;
-}
-.mr-10 {
-  margin-right: 2.5rem;
-}
 .mr-20 {
   margin-right: 5rem;
 }
 .flex {
   display: flex;
 }
-.w-3\/4 {
-  width: 75%;
-}
-.w-2\/4 {
-  width: 50%;
-}
-.w-24 {
-  width: 6rem;
+.w-5\/6 {
+  width: 83.333333%;
 }
 .w-32 {
   width: 8rem;
 }
-.w-5\/6 {
-  width: 83.333333%;
-}
-.w-4 {
-  width: 1rem;
-}
-.w-0 {
-  width: 0px;
-}
 .justify-between {
   justify-content: space-between;
-}
-.justify-around {
-  justify-content: space-around;
-}
-.overflow-visible {
-  overflow: visible;
 }
 .rounded-sm {
   border-radius: 0.125rem;
@@ -11779,18 +11743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(29 78 216 / var(--tw-border-opacity));
 }
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -11799,45 +11751,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.font-medium {
-  font-weight: 500;
-}
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-.hover\:mb-2:hover {
-  margin-bottom: 0.5rem;
 }
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
-.hover\:pb-2:hover {
-  padding-bottom: 0.5rem;
-}
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.hover\:transition-all:hover {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
