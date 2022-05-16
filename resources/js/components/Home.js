@@ -18,6 +18,8 @@ function Home() {
 
                 <button className='text-blue-700 border-2 border-blue-700 rounded-sm px-3 py-2 hover:text-white hover:bg-blue-700'>Sign Up Now</button>
             </nav>
+
+            <h1 className='text-blue-700 text-3xl font-medium mt-5'>Welcome to CarTrade, <br /> <strong className='uppercase'>The Place you Buy and Rent cars.</strong></h1>
         </div>
     );
 }
