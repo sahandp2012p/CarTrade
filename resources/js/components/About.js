@@ -39,7 +39,7 @@ function About() {
             <h1 className='text-blue-700 text-4xl font-medium mt-5 uppercase mb-3'>About Us</h1>
 			<p className='text-blue-700 mb-3'>CarTrade is a big website that you can buy and rent cars from them <br /> with confidence. CarTrade has a lot of types of cars from <br /> Volkswagen beetles to Chevrolet corvettes.</p>
 			<button className='hover:bg-blue-600 hover:border-blue-600 mr-3 border-2 border-blue-700 rounded-sm px-12 py-2 text-white bg-blue-700 uppercase'>Rent a car</button>
-            <button className='text-blue-700 border-2 border-blue-700 rounded-sm px-12 py-2 hover:text-white hover:bg-blue-700 uppercase'>Rent a car</button>
+            <button className='text-blue-700 border-2 border-blue-700 rounded-sm px-12 py-2 hover:text-white hover:bg-blue-700 uppercase'>Buy a car</button>
 		</div>
     );
 }

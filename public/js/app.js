@@ -5531,7 +5531,7 @@ function About() {
       children: "Rent a car"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
       className: "text-blue-700 border-2 border-blue-700 rounded-sm px-12 py-2 hover:text-white hover:bg-blue-700 uppercase",
-      children: "Rent a car"
+      children: "Buy a car"
     })]
   });
 }
@@ -5628,7 +5628,7 @@ function Home() {
       children: "Rent a car"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
       className: "text-blue-700 border-2 border-blue-700 rounded-sm px-12 py-2 hover:text-white hover:bg-blue-700 uppercase",
-      children: "Rent a car"
+      children: "Buy a car"
     })]
   });
 }
