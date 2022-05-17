@@ -8,7 +8,7 @@ function Home() {
                 <img src="/imgs/logo.svg" alt="CarTrade" className='w-32'/>
             
                 <ul className="flex text-blue-700">
-                    <li className='mr-20'><a href="#">About us</a></li>
+                    <li className='mr-20'><a href="/about">About us</a></li>
                     <li className='mr-20'><a href="#">Why choose us?</a></li>
                     <li className='mr-20'><a href="#">Sign up</a></li>
                     <li className='mr-20'><a href="#">Rent a car</a></li>
@@ -30,4 +30,6 @@ function Home() {
 
 export default Home;
 
-ReactDOM.render(<Home />, document.getElementById('home'));
+if (document.getElementById('home')) {
+    ReactDOM.render(<Home />, document.getElementById('home'));
+}

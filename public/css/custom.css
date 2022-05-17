@@ -11831,3 +11831,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(24 106 165 / var(--tw-text-opacity));
 }
+
+.hamburger {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: black;
+  margin-top: 5px;
+  border-radius: 100vw;
+}
+
+.hamburger span:nth-last-of-type(2) {
+  width: 15px;
+}
+
+.hamburger span:nth-last-of-type(3) {
+  width: 20px;
+}
+
+nav.enabled ul {
+  display: none;
+}
