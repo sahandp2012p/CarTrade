@@ -26,7 +26,7 @@ function About() {
 
 				<ul className="flex text-blue-700">
                     <li className='mr-20'><a href="/">Home</a></li>
-                    <li className='mr-20'><a href="#">Why choose us?</a></li>
+                    <li className='mr-20'><a href="/whychooseus">Why choose us?</a></li>
                     <li className='mr-20'><a href="#">Sign up</a></li>
                     <li className='mr-20'><a href="#">Rent a car</a></li>
                     <li className='mr-20'><a href="#">Buy a car</a></li>
