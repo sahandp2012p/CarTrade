@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 </head>
 <body>
-    
+    <div id="whychooseus"></div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
