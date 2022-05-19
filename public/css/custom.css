@@ -11857,3 +11857,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 nav.enabled ul {
   display: none;
 }
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.features li img {
+  width: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.features li div {
+  display: inline;
+}

@@ -11,6 +11,7 @@ function Home() {
                     <li className='mr-20'><a href="/about">About us</a></li>
                     <li className='mr-20'><a href="/whychooseus">Why choose us?</a></li>
                     <li className='mr-20'><a href="#">Sign up</a></li>
+                    <li className='mr-20'><a href="#">Log in</a></li>
                     <li className='mr-20'><a href="#">Rent a car</a></li>
                     <li className='mr-20'><a href="#">Buy a car</a></li>
                     <li><a href="#">Contact us</a></li>
