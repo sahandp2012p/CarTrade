@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +25,14 @@ Route::get('/about', function () {
 
 Route::get('/whychooseus', function () {
     return view('whychooseus');
+});
+
+Route::post('/signup', function () {
+    User::create([
+        "name" => $_REQUEST['name'],
+        "email" => $_REQUEST['email'],
+        "password" => Hash::make($_REQUEST["password"])
+    ]);
+
+    return "ok";
 });
