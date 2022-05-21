@@ -11736,6 +11736,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mt-32 {
+  margin-top: 8rem;
+}
+.mt-40 {
+  margin-top: 10rem;
+}
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -11747,6 +11756,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-96 {
   width: 24rem;
+}
+.w-full {
+  width: 100%;
 }
 .justify-between {
   justify-content: space-between;

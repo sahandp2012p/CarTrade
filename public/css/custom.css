@@ -11871,3 +11871,13 @@ nav.enabled ul {
 .features li div {
   display: inline;
 }
+
+#signup {
+  text-align: center;
+}
+
+#signup img {
+  display: block;
+  margin-inline: auto;
+  margin-top: 130px;
+}

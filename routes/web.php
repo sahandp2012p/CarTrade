@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,11 @@ Route::post('/signup', function () {
         "name" => $_REQUEST['name'],
         "email" => $_REQUEST['email'],
         "password" => Hash::make($_REQUEST["password"])
+    ]);
+
+    Auth::attempt([
+        "email" => $_REQUEST['email'],
+        "password" => $_REQUEST['password']
     ]);
 
     return "ok";
