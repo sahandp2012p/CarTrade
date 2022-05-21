@@ -36,3 +36,7 @@ Route::post('/signup', function () {
 
     return "ok";
 });
+
+Route::get('/signup', function () {
+    return view('signup');
+});
