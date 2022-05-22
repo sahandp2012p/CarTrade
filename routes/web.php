@@ -3,6 +3,7 @@
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,11 +41,34 @@ Route::post('/signup', function () {
         "password" => $_REQUEST['password']
     ]);
 
+    $mail_data = [
+        'recipient' => $_REQUEST['email'],
+        'fromEmail' => 'sahndpourjavad@gmail.com',
+        'fromName' => 'CarTrade',
+        'subject' => 'Thank you',
+        'body' => 'Thank you for signing up to CarTrade'
+    ];
+
+    Mail::send('email-template', $mail_data, function($message) use ($mail_data) {
+        $message->to($mail_data["recipient"])
+                ->from($mail_data['fromEmail'], $mail_data['fromName'])
+                ->subject($mail_data['subject']);
+    });
+
     return "ok";
 });
 
 Route::get('/signup', function () {
     return view('signup');
+});
+
+Route::post('/login', function () {
+    Auth::attempt([
+        "email" => $_REQUEST['email'],
+        "password" => $_REQUEST['password']
+    ]);
+
+    return "ok";
 });
 
 Route::get('/login', function () {

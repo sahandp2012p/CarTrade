@@ -22,6 +22,8 @@ function Signup() {
         if (password == passwordConfirmation) {
             axios.post('/signup', data).then(() => {
                 window.location = '/'
+            }).catch(() => {
+                window.location.reload()
             })
         } else {
             window.location.reload()

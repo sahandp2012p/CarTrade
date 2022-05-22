@@ -16,3 +16,4 @@ require('./components/Home');
 require('./components/About');
 require('./components/Whychooseus');
 require('./components/Signup')
+require('./components/Login')

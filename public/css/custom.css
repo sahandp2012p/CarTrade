@@ -11881,3 +11881,13 @@ nav.enabled ul {
   margin-inline: auto;
   margin-top: 130px;
 }
+
+#login {
+  text-align: center;
+}
+
+#login img {
+  display: block;
+  margin-inline: auto;
+  margin-top: 130px;
+}
