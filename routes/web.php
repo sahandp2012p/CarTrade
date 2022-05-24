@@ -74,3 +74,54 @@ Route::post('/login', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/password/reset', function () {
+    return view('password.reset', ["sended" => ""]);
+});
+
+Route::put('/password/reset', function () {
+    $user = User::where([
+        "email" => $_REQUEST['email']
+    ])->first();
+
+    if(!$user) {
+        return "User not found";
+    };
+
+    $mail_data = [
+        'recipient' => $_REQUEST['email'],
+        'fromEmail' => 'sahndpourjavad@gmail.com',
+        'fromName' => 'CarTrade',
+        'subject' => 'Password reset',
+        'body' => $user,
+        'link' => url('/')
+    ];
+
+    Mail::send('password.email', $mail_data, function($message) use ($mail_data) {
+        $message->to($mail_data["recipient"])
+                ->from($mail_data['fromEmail'], $mail_data['fromName'])
+                ->subject($mail_data['subject']);
+    });
+
+    return view("password.reset", ["sended" => true]);
+});
+
+Route::get('/password/reset/{email}', function ($email) {
+    return view('password.form', ["email" => $email]);
+});
+
+Route::put('/password/reset/{email}', function ($email) {
+    if($_REQUEST["password"] == $_REQUEST["password_confirm"]) {
+        $user = User::where([
+            "email" => $email
+        ])->first();
+
+        $user->password = Hash::make($_REQUEST["password"]);
+        
+        $user->save();
+
+        return redirect('/');
+    } else {
+        return redirect('/password/reset/' . $email);
+    };
+});

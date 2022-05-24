@@ -11891,3 +11891,27 @@ nav.enabled ul {
   margin-inline: auto;
   margin-top: 130px;
 }
+
+.reset button:hover {
+  background-color: rgb(37 99 235);
+}
+
+.reset button:hover {
+  border-color: rgb(37 99 235);
+}
+
+.reset button {
+  margin-right: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(37 99 235);
+  border-radius: 0.125rem;
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+  color: white;
+  background-color: rgb(29 78 216);
+  text-transform: uppercase;
+}
+
+.text-sended {
+  color: rgb(68 237 169);
+}

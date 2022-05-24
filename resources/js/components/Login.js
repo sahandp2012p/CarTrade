@@ -33,6 +33,8 @@ function Login() {
                 <br />
                 <input type="password" placeholder='Password' required onChange={(e) => setPassword(e.currentTarget.value)}/>
                 <br />
+                <a href="/password/reset">Reset password</a>
+                <br />
                 <br />
                 <button type='submit' className='hover:bg-blue-600 hover:border-blue-600 mr-3 border-2 border-blue-700 rounded-sm px-12 py-2 text-white bg-blue-700 uppercase'>Log in</button>
             </form>
