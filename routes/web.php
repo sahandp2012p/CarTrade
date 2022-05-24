@@ -120,6 +120,11 @@ Route::put('/password/reset/{email}', function ($email) {
         
         $user->save();
 
+        Auth::attempt([
+            "email" => $email,
+            "password" => $user->password
+        ]);
+
         return redirect('/');
     } else {
         return redirect('/password/reset/' . $email);
