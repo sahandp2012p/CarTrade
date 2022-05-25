@@ -15,10 +15,12 @@ function Login() {
         data.append("email", email)
         data.append("password", password)
 
-        axios.post('/login', data).then(() => {
-            window.location = '/'
-        }).catch(() => {
-            window.location.reload()
+        axios.post('/login', data).then((response) => {
+            if (response.data === "Ok") {
+                window.location = '/'
+            } else {
+                window.location = '/login';
+            }
         })
     }
 

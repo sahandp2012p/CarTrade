@@ -5755,10 +5755,12 @@ function Login() {
     var data = new (form_data__WEBPACK_IMPORTED_MODULE_1___default())();
     data.append("email", email);
     data.append("password", password);
-    axios__WEBPACK_IMPORTED_MODULE_0___default().post('/login', data).then(function () {
-      window.location = '/';
-    })["catch"](function () {
-      window.location.reload();
+    axios__WEBPACK_IMPORTED_MODULE_0___default().post('/login', data).then(function (response) {
+      if (response.data === "Ok") {
+        window.location = '/';
+      } else {
+        window.location = '/login';
+      }
     });
   }
 

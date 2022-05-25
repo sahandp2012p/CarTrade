@@ -63,12 +63,18 @@ Route::get('/signup', function () {
 });
 
 Route::post('/login', function () {
+    Auth::logout();
+    
     Auth::attempt([
         "email" => $_REQUEST['email'],
         "password" => $_REQUEST['password']
     ]);
 
-    return "ok";
+    if (Auth::user()) {
+        return "Ok";
+    }
+
+    return "Invalid username or password";
 });
 
 Route::get('/login', function () {
