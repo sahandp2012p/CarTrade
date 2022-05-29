@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import loggedIn from '../utils/loggedIn';
 import ListItem from './ListItem';
 
 function Whychooseus() {
     const [open, setOpen] = useState(false);
+    const [returnValue, setReturnValue] = useState(false);
 
     function isOpen() {
         return open;
@@ -26,7 +28,8 @@ function Whychooseus() {
 					<img src="/imgs/logo.svg" alt="CarTrade" className='w-32'/>
 				</div>
 
-				<ul className="flex text-blue-700">
+				{!loggedIn(returnValue, setReturnValue) ?
+                <ul className="flex text-blue-700">
                     <li className='mr-20'><a href="/">Home</a></li>
                     <li className='mr-20'><a href="/about">About us</a></li>
                     <li className='mr-20'><a href="/signup">Sign up</a></li>
@@ -35,6 +38,16 @@ function Whychooseus() {
                     <li className='mr-20'><a href="#">Buy a car</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
+                :
+                <ul className="flex text-blue-700">
+                    <li className='mr-20'><a href="/">Home</a></li>
+                    <li className='mr-20'><a href="/about">About us</a></li>
+                    <li className='mr-20'><a href="#">Rent a car</a></li>
+                    <li className='mr-20'><a href="#">Buy a car</a></li>
+                    <li className='mr-20'><a href="#">Contact us</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+                }
 				
                 <button className='text-blue-700 border-2 border-blue-700 rounded-sm px-3 py-2 hover:text-white hover:bg-blue-700 uppercase'>Sign Up Now</button>
             </nav>
