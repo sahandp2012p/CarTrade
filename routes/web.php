@@ -136,3 +136,11 @@ Route::put('/password/reset/{email}', function ($email) {
         return redirect('/password/reset/' . $email);
     };
 });
+
+Route::get('/isloggedin', function () {
+    if (Auth::user()) {
+        return "Ok";
+    }
+
+    return "Not logged in";
+});
